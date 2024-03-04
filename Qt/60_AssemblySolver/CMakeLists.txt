@@ -18,31 +18,39 @@ project(60_AssemblySolver)
 ################################################################################
 # Build the Tutorial/AssemblySolver executables
 ################################################################################
-SET(SRC_AssemblySolver 
-    ./assemblysolver.cpp 
-    ./assemblysolver.h
-    ./assemblywidget.cpp 
-    ./assemblywidget.h
-    ./prbase.cpp
-    ./prbase.h
-    ./prinsertItem.cpp
-    ./prinsertItem.h
-    ./prbinconstraint.cpp
-    ./prbinconstraint.h
-    ./prrotation.cpp
-    ./prrotation.h
-    ./reporter.cpp
-    ./reporter.h
-    ./main.cpp)
+#SET(SRC_AssemblySolver 
+#    ./assemblysolver.cpp 
+#    ./assemblysolver.h
+#    ./assemblywidget.cpp 
+#    ./assemblywidget.h
+#    ./prbase.cpp
+#    ./prbase.h
+#    ./prinsertItem.cpp
+#    ./prinsertItem.h
+#    ./prbinconstraint.cpp
+#    ./prbinconstraint.h
+#    ./prrotation.cpp
+#    ./prrotation.h
+#    ./reporter.cpp
+#    ./reporter.h
+#    ./main.cpp)
+#
 
-SET(MOC_Files ./assemblywidget.h ./reporter.h)
+
+file(GLOB SRC_Configurator_h CONFIGURE_DEPENDS "*.h")
+SOURCE_GROUP(Headers FILES ${SRC_Configurator_h})
+
+file(GLOB SRC_Configurator_cpp CONFIGURE_DEPENDS "*.cpp")
+SOURCE_GROUP(Sources FILES ${SRC_Configurator_cpp})
+
+SET(MOC_Files ${SRC_Configurator_h})
 
 QT5_WRAP_CPP(MOC_Gui ${MOC_Files})
 
 SET(RCC_Files_AssemblySolver ./assemblywidget.qrc)
 QT5_ADD_RESOURCES(RCC_Gui ${RCC_Files_AssemblySolver})
 
-ADD_EXECUTABLE(${60_AssemblySolver_OUTPUT} WIN32 ${MOC_Gui} ${RCC_Gui} ${SRC_AssemblySolver} ${SRC_Shared})
+ADD_EXECUTABLE(${60_AssemblySolver_OUTPUT} WIN32 ${MOC_Gui} ${RCC_Gui} ${SRC_Configurator_cpp} ${SRC_Configurator_h} ${SRC_Shared})
 TARGET_LINK_LIBRARIES(${60_AssemblySolver_OUTPUT} ${C3D_MATH_LIB} ${C3D_VIS_LIB} ${QtVision_OUTPUT} ${OPENGL_LIBRAREIS} ${STDLIB})
 
 SET_TARGET_PROPERTIES(${60_AssemblySolver_OUTPUT} PROPERTIES FOLDER ${Examples_OUTPUT}/Qt)
