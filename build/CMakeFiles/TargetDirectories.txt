@@ -1,7 +1,0 @@
-C:/Users/User/source/repos/graduateWork/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/User/source/repos/graduateWork/build/CMakeFiles/ZERO_CHECK.dir
-C:/Users/User/source/repos/graduateWork/build/QtVision/CMakeFiles/qtvision.dir
-C:/Users/User/source/repos/graduateWork/build/QtVision/CMakeFiles/ALL_BUILD.dir
-C:/Users/User/source/repos/graduateWork/build/Qt/CMakeFiles/ALL_BUILD.dir
-C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/CMakeFiles/60_AssemblySolver.dir
-C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/CMakeFiles/ALL_BUILD.dir
