@@ -181,8 +181,14 @@ namespace BuildMathModel {
 		static  SPtr<MbAssembly> CreatePneumocylinderAssembly(BuildParams params);
 	private:
 		// details
-		static SPtr<MbSolid> ParametricModelCreator::CreateSolidShtyr();
-		static SPtr<MbSolid> ParametricModelCreator::CreateSolidKoleso();
-		static SPtr<MbSolid> ParametricModelCreator::CreateSolidVilka();
+        static SPtr<MbSolid> ParametricModelCreator::create_001_tubeTeploobmen();
+        static SPtr<MbSolid> ParametricModelCreator::create_002_tubeKozhux();
+        static SPtr<MbSolid> ParametricModelCreator::create_003_opora();
+        static SPtr<MbSolid> ParametricModelCreator::create_004_reshetkaKozhux();
+        static SPtr<MbSolid> ParametricModelCreator::create_005_kamera();
+        static SPtr<MbSolid> ParametricModelCreator::create_006_RezhetkaTeplTube();
+        static SPtr<MbSolid> ParametricModelCreator::create_007_FlanecKozhux();
+        static SPtr<MbSolid> ParametricModelCreator::create_008_FlanecSpecial();
+        static SPtr<MbSolid> ParametricModelCreator::create_009_curevedTube();
 	};
 }
