@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\QtVision\src\qt_openglwidget.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\QtVision\src\qt_openglwindow.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\QtVision\src\qt_openglcontext.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\QtVision\src\qt_aboutscenewidget.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\QtVision\src\qt_licensewnd.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\QtVision\src\qt_cursors.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\QtVision\src\qt_headsuptoolbar.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\build\QtVision\Include\moc_qt_openglwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\build\QtVision\Include\moc_qt_openglwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\build\QtVision\Include\moc_qt_aboutscenewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\build\QtVision\Include\moc_qt_licensewnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\build\QtVision\Include\moc_qt_headsuptoolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\build\QtVision\qrc_qt_openglwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\QtVision\Include\qt_openglcontext.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\QtVision\Include\qt_openglwidget.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\QtVision\Include\qt_openglwindow.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\QtVision\Include\qt_visiondef.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\QtVision\Include\qt_resstream.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\QtVision\Include\qt_aboutscenewidget.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\QtVision\Include\qt_licensewnd.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\QtVision\Include\qt_cursors.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\QtVision\Include\qt_headsuptoolbar.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\User\source\repos\graduateWork\build\CMakeFiles\1b0fe0f951fe4b3cd31c16974c2d1c61\moc_qt_openglwidget.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\User\source\repos\graduateWork\build\CMakeFiles\1b0fe0f951fe4b3cd31c16974c2d1c61\moc_qt_openglwindow.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\User\source\repos\graduateWork\build\CMakeFiles\1b0fe0f951fe4b3cd31c16974c2d1c61\moc_qt_aboutscenewidget.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\User\source\repos\graduateWork\build\CMakeFiles\1b0fe0f951fe4b3cd31c16974c2d1c61\moc_qt_licensewnd.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\User\source\repos\graduateWork\build\CMakeFiles\1b0fe0f951fe4b3cd31c16974c2d1c61\moc_qt_headsuptoolbar.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\User\source\repos\graduateWork\QtVision\src\qt_openglwidget.qrc" />
+    <CustomBuild Include="C:\Users\User\source\repos\graduateWork\QtVision\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{14C9D899-CA97-355C-B3D0-9E2D19F8659E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{C2AD9FE7-4107-35AC-BA67-6BF33E4266D5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{680421CE-BBEC-3302-9DFE-7AA2EB3D6638}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A5CF4B9D-98A4-3584-92D6-EE1E45B6DEB2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

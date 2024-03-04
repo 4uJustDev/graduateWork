@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\moc_assemblywidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\moc_reporter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\qrc_assemblywidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\assemblysolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\assemblywidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\prbase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\prinsertItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\prbinconstraint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\prrotation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\reporter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\Shared\scenegenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\assemblysolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\assemblywidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\prbase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\prinsertItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\prbinconstraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\prrotation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\reporter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\Shared\scenegenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\User\source\repos\graduateWork\build\CMakeFiles\61974a6664ff49837b45b5991b9b9119\moc_assemblywidget.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\User\source\repos\graduateWork\build\CMakeFiles\61974a6664ff49837b45b5991b9b9119\moc_reporter.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\assemblywidget.qrc" />
+    <CustomBuild Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{14C9D899-CA97-355C-B3D0-9E2D19F8659E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{585B39C6-3EC7-300E-904A-53D6507AADFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A5CF4B9D-98A4-3584-92D6-EE1E45B6DEB2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0CCF08A4-9350-3F42-A60B-9751799216FD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>60_AssemblySolver</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\User\source\repos\graduateWork\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">60_AssemblySolver.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">60_AssemblySolver</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\User\source\repos\graduateWork\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">60_AssemblySolver.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">60_AssemblySolver</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\User\source\repos\graduateWork\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">60_AssemblySolver.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">60_AssemblySolver</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\User\source\repos\graduateWork\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">60_AssemblySolver.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">60_AssemblySolver</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\User\source\repos\graduateWork;C:\Users\User\source\repos\graduateWork\Shared;C:\Users\User\source\repos\graduateWork\C3D\Kernel\Include;C:\Users\User\source\repos\graduateWork\C3D\Vision\Include;C:\Users\User\source\repos\graduateWork\QtVision\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/5.15.2/msvc2019_64/include" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtCore" /external:I "C:/Qt/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtGui" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtANGLE" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtOpenGL" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtWidgets" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_DEBUG;_DRAWGI;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;UNICODE;_UNICODE;__USE_QT__;QT_NO_DEPRECATED_WARNINGS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_DRAWGI;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;UNICODE;_UNICODE;__USE_QT__;QT_NO_DEPRECATED_WARNINGS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\User\source\repos\graduateWork;C:\Users\User\source\repos\graduateWork\Shared;C:\Users\User\source\repos\graduateWork\C3D\Kernel\Include;C:\Users\User\source\repos\graduateWork\C3D\Vision\Include;C:\Users\User\source\repos\graduateWork\QtVision\Include;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtOpenGL;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\User\source\repos\graduateWork;C:\Users\User\source\repos\graduateWork\Shared;C:\Users\User\source\repos\graduateWork\C3D\Kernel\Include;C:\Users\User\source\repos\graduateWork\C3D\Vision\Include;C:\Users\User\source\repos\graduateWork\QtVision\Include;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtOpenGL;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>c3dvision.lib;..\..\QtVision\Debug\qtvision.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5OpenGLd.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Widgetsd.lib;c3dvision.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Guid.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Cored.lib;C:\Qt\5.15.2\msvc2019_64\lib\qtmaind.lib;c3d.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/User/source/repos/graduateWork/C3D/Kernel/$(Configuration);C:/Users/User/source/repos/graduateWork/C3D/Kernel/$(Configuration)/$(Configuration);C:/Users/User/source/repos/graduateWork/C3D/Vision/$(Configuration);C:/Users/User/source/repos/graduateWork/C3D/Vision/$(Configuration)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/Debug/60_AssemblySolver.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/User/source/repos/graduateWork/build/bin/Debug/60_AssemblySolver.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\User\source\repos\graduateWork;C:\Users\User\source\repos\graduateWork\Shared;C:\Users\User\source\repos\graduateWork\C3D\Kernel\Include;C:\Users\User\source\repos\graduateWork\C3D\Vision\Include;C:\Users\User\source\repos\graduateWork\QtVision\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/5.15.2/msvc2019_64/include" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtCore" /external:I "C:/Qt/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtGui" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtANGLE" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtOpenGL" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtWidgets"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_SECURE_SCL=0;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;UNICODE;_UNICODE;__USE_QT__;QT_NO_DEPRECATED_WARNINGS;QT_NO_DEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_SECURE_SCL=0;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;UNICODE;_UNICODE;__USE_QT__;QT_NO_DEPRECATED_WARNINGS;QT_NO_DEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\User\source\repos\graduateWork;C:\Users\User\source\repos\graduateWork\Shared;C:\Users\User\source\repos\graduateWork\C3D\Kernel\Include;C:\Users\User\source\repos\graduateWork\C3D\Vision\Include;C:\Users\User\source\repos\graduateWork\QtVision\Include;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtOpenGL;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\User\source\repos\graduateWork;C:\Users\User\source\repos\graduateWork\Shared;C:\Users\User\source\repos\graduateWork\C3D\Kernel\Include;C:\Users\User\source\repos\graduateWork\C3D\Vision\Include;C:\Users\User\source\repos\graduateWork\QtVision\Include;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtOpenGL;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>c3dvision.lib;..\..\QtVision\Release\qtvision.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5OpenGL.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;c3dvision.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Gui.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Core.lib;C:\Qt\5.15.2\msvc2019_64\lib\qtmain.lib;c3d.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/User/source/repos/graduateWork/C3D/Kernel/$(Configuration);C:/Users/User/source/repos/graduateWork/C3D/Kernel/$(Configuration)/$(Configuration);C:/Users/User/source/repos/graduateWork/C3D/Vision/$(Configuration);C:/Users/User/source/repos/graduateWork/C3D/Vision/$(Configuration)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/Release/60_AssemblySolver.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/User/source/repos/graduateWork/build/bin/Release/60_AssemblySolver.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\User\source\repos\graduateWork;C:\Users\User\source\repos\graduateWork\Shared;C:\Users\User\source\repos\graduateWork\C3D\Kernel\Include;C:\Users\User\source\repos\graduateWork\C3D\Vision\Include;C:\Users\User\source\repos\graduateWork\QtVision\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/5.15.2/msvc2019_64/include" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtCore" /external:I "C:/Qt/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtGui" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtANGLE" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtOpenGL" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtWidgets"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;UNICODE;_UNICODE;__USE_QT__;QT_NO_DEPRECATED_WARNINGS;QT_NO_DEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;UNICODE;_UNICODE;__USE_QT__;QT_NO_DEPRECATED_WARNINGS;QT_NO_DEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\User\source\repos\graduateWork;C:\Users\User\source\repos\graduateWork\Shared;C:\Users\User\source\repos\graduateWork\C3D\Kernel\Include;C:\Users\User\source\repos\graduateWork\C3D\Vision\Include;C:\Users\User\source\repos\graduateWork\QtVision\Include;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtOpenGL;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\User\source\repos\graduateWork;C:\Users\User\source\repos\graduateWork\Shared;C:\Users\User\source\repos\graduateWork\C3D\Kernel\Include;C:\Users\User\source\repos\graduateWork\C3D\Vision\Include;C:\Users\User\source\repos\graduateWork\QtVision\Include;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtOpenGL;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>c3dvision.lib;..\..\QtVision\MinSizeRel\qtvision.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5OpenGL.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;c3dvision.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Gui.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Core.lib;C:\Qt\5.15.2\msvc2019_64\lib\qtmain.lib;c3d.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/User/source/repos/graduateWork/C3D/Kernel/$(Configuration);C:/Users/User/source/repos/graduateWork/C3D/Kernel/$(Configuration)/$(Configuration);C:/Users/User/source/repos/graduateWork/C3D/Vision/$(Configuration);C:/Users/User/source/repos/graduateWork/C3D/Vision/$(Configuration)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/MinSizeRel/60_AssemblySolver.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/User/source/repos/graduateWork/build/bin/MinSizeRel/60_AssemblySolver.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\User\source\repos\graduateWork;C:\Users\User\source\repos\graduateWork\Shared;C:\Users\User\source\repos\graduateWork\C3D\Kernel\Include;C:\Users\User\source\repos\graduateWork\C3D\Vision\Include;C:\Users\User\source\repos\graduateWork\QtVision\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/5.15.2/msvc2019_64/include" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtCore" /external:I "C:/Qt/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtGui" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtANGLE" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtOpenGL" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtWidgets"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;UNICODE;_UNICODE;__USE_QT__;QT_NO_DEPRECATED_WARNINGS;QT_NO_DEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;UNICODE;_UNICODE;__USE_QT__;QT_NO_DEPRECATED_WARNINGS;QT_NO_DEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\User\source\repos\graduateWork;C:\Users\User\source\repos\graduateWork\Shared;C:\Users\User\source\repos\graduateWork\C3D\Kernel\Include;C:\Users\User\source\repos\graduateWork\C3D\Vision\Include;C:\Users\User\source\repos\graduateWork\QtVision\Include;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtOpenGL;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\User\source\repos\graduateWork;C:\Users\User\source\repos\graduateWork\Shared;C:\Users\User\source\repos\graduateWork\C3D\Kernel\Include;C:\Users\User\source\repos\graduateWork\C3D\Vision\Include;C:\Users\User\source\repos\graduateWork\QtVision\Include;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtOpenGL;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>c3dvision.lib;..\..\QtVision\RelWithDebInfo\qtvision.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5OpenGL.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;c3dvision.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Gui.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Core.lib;C:\Qt\5.15.2\msvc2019_64\lib\qtmain.lib;c3d.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/User/source/repos/graduateWork/C3D/Kernel/$(Configuration);C:/Users/User/source/repos/graduateWork/C3D/Kernel/$(Configuration)/$(Configuration);C:/Users/User/source/repos/graduateWork/C3D/Vision/$(Configuration);C:/Users/User/source/repos/graduateWork/C3D/Vision/$(Configuration)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/RelWithDebInfo/60_AssemblySolver.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/User/source/repos/graduateWork/build/bin/RelWithDebInfo/60_AssemblySolver.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\User\source\repos\graduateWork\build\CMakeFiles\61974a6664ff49837b45b5991b9b9119\moc_assemblywidget.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating moc_assemblywidget.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\5.15.2\msvc2019_64\bin\moc.exe @C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/moc_assemblywidget.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\assemblywidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\moc_assemblywidget.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating moc_assemblywidget.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\5.15.2\msvc2019_64\bin\moc.exe @C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/moc_assemblywidget.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\assemblywidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\moc_assemblywidget.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating moc_assemblywidget.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\5.15.2\msvc2019_64\bin\moc.exe @C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/moc_assemblywidget.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\assemblywidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\moc_assemblywidget.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating moc_assemblywidget.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\5.15.2\msvc2019_64\bin\moc.exe @C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/moc_assemblywidget.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\assemblywidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\moc_assemblywidget.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\User\source\repos\graduateWork\build\CMakeFiles\61974a6664ff49837b45b5991b9b9119\moc_reporter.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating moc_reporter.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\5.15.2\msvc2019_64\bin\moc.exe @C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/moc_reporter.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\reporter.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\moc_reporter.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating moc_reporter.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\5.15.2\msvc2019_64\bin\moc.exe @C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/moc_reporter.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\reporter.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\moc_reporter.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating moc_reporter.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\5.15.2\msvc2019_64\bin\moc.exe @C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/moc_reporter.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\reporter.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\moc_reporter.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating moc_reporter.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\5.15.2\msvc2019_64\bin\moc.exe @C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/moc_reporter.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\reporter.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\moc_reporter.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\assemblywidget.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating qrc_assemblywidget.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Qt\5.15.2\msvc2019_64\bin\rcc.exe --name assemblywidget --output C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/qrc_assemblywidget.cpp C:/Users/User/source/repos/graduateWork/Qt/60_AssemblySolver/assemblywidget.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\open_fromfile_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\save_file32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\select_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_ang_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_fix_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_coax_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_coin_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_cancel_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_dis_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_parll_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_perp_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_rotate_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_insert_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_select_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_ok_32.png;C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\assemblywidget.qrc.depends;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\qrc_assemblywidget.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating qrc_assemblywidget.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Qt\5.15.2\msvc2019_64\bin\rcc.exe --name assemblywidget --output C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/qrc_assemblywidget.cpp C:/Users/User/source/repos/graduateWork/Qt/60_AssemblySolver/assemblywidget.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\open_fromfile_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\save_file32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\select_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_ang_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_fix_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_coax_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_coin_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_cancel_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_dis_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_parll_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_perp_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_rotate_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_insert_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_select_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_ok_32.png;C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\assemblywidget.qrc.depends;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\qrc_assemblywidget.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating qrc_assemblywidget.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Qt\5.15.2\msvc2019_64\bin\rcc.exe --name assemblywidget --output C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/qrc_assemblywidget.cpp C:/Users/User/source/repos/graduateWork/Qt/60_AssemblySolver/assemblywidget.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\open_fromfile_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\save_file32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\select_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_ang_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_fix_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_coax_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_coin_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_cancel_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_dis_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_parll_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_perp_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_rotate_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_insert_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_select_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_ok_32.png;C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\assemblywidget.qrc.depends;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\qrc_assemblywidget.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating qrc_assemblywidget.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Qt\5.15.2\msvc2019_64\bin\rcc.exe --name assemblywidget --output C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/qrc_assemblywidget.cpp C:/Users/User/source/repos/graduateWork/Qt/60_AssemblySolver/assemblywidget.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\open_fromfile_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\save_file32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\select_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_ang_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_fix_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_coax_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_coin_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_cancel_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_dis_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_parll_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_perp_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_rotate_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_insert_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_select_32.png;C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\res\proc_ok_32.png;C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\assemblywidget.qrc.depends;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\qrc_assemblywidget.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/User/source/repos/graduateWork/Qt/60_AssemblySolver/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/User/source/repos/graduateWork -BC:/Users/User/source/repos/graduateWork/build --check-stamp-file C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\assemblywidget.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/User/source/repos/graduateWork/Qt/60_AssemblySolver/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/User/source/repos/graduateWork -BC:/Users/User/source/repos/graduateWork/build --check-stamp-file C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\assemblywidget.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/User/source/repos/graduateWork/Qt/60_AssemblySolver/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/User/source/repos/graduateWork -BC:/Users/User/source/repos/graduateWork/build --check-stamp-file C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\assemblywidget.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/User/source/repos/graduateWork/Qt/60_AssemblySolver/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/User/source/repos/graduateWork -BC:/Users/User/source/repos/graduateWork/build --check-stamp-file C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\assemblywidget.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\moc_assemblywidget.cpp" />
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\moc_reporter.cpp" />
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\build\Qt\60_AssemblySolver\qrc_assemblywidget.cpp" />
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\assemblysolver.cpp" />
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\assemblysolver.h" />
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\assemblywidget.cpp" />
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\assemblywidget.h" />
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\prbase.cpp" />
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\prbase.h" />
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\prinsertItem.cpp" />
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\prinsertItem.h" />
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\prbinconstraint.cpp" />
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\prbinconstraint.h" />
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\prrotation.cpp" />
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\prrotation.h" />
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\reporter.cpp" />
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\reporter.h" />
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\Qt\60_AssemblySolver\main.cpp" />
+    <ClCompile Include="C:\Users\User\source\repos\graduateWork\Shared\scenegenerator.cpp" />
+    <ClInclude Include="C:\Users\User\source\repos\graduateWork\Shared\scenegenerator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\User\source\repos\graduateWork\build\ZERO_CHECK.vcxproj">
+      <Project>{47A7F2B4-A310-35C0-B9ED-809DB1DDE731}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\source\repos\graduateWork\build\QtVision\qtvision.vcxproj">
+      <Project>{BE972C61-4D9D-3F8F-AD4F-26FE6A7EF0A4}</Project>
+      <Name>qtvision</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

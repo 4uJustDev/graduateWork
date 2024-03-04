@@ -1,0 +1,15 @@
+-IC:/Users/User/source/repos/graduateWork
+-IC:/Users/User/source/repos/graduateWork/Shared
+-IC:/Users/User/source/repos/graduateWork/C3D/Kernel/Include
+-IC:/Users/User/source/repos/graduateWork/C3D/Vision/Include
+-IC:/Users/User/source/repos/graduateWork/QtVision/Include
+-DUNICODE
+-D_UNICODE
+-D__USE_QT__
+-DQT_NO_DEPRECATED_WARNINGS
+-DQT_NO_DEPRECATED_WARNINGS
+-DWIN32
+--compiler-flavor=msvc
+-o
+C:/Users/User/source/repos/graduateWork/build/Qt/60_AssemblySolver/moc_reporter.cpp
+C:/Users/User/source/repos/graduateWork/Qt/60_AssemblySolver/reporter.h

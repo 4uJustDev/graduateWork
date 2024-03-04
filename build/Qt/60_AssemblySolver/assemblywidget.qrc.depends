@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/open_fromfile_32.png</file>
+        <file>res/save_file32.png</file>
+        <file>res/select_32.png</file>
+        <file>res/proc_ang_32.png</file>
+        <file>res/proc_fix_32.png</file>
+        <file>res/proc_coax_32.png</file>
+        <file>res/proc_coin_32.png</file>
+        <file>res/proc_cancel_32.png</file>
+        <file>res/proc_dis_32.png</file>
+        <file>res/proc_parll_32.png</file>
+        <file>res/proc_perp_32.png</file>
+        <file>res/proc_rotate_32.png</file>
+        <file>res/proc_insert_32.png</file>
+        <file>res/proc_select_32.png</file>
+        <file>res/proc_ok_32.png</file>
+    </qresource>
+</RCC>
