@@ -176,16 +176,8 @@ QString AssmSolverSceneWidget::openSelectModel()
     SceneSegment* pTopSegment = sceneContent()->GetRootSegment();
     Q_ASSERT(pTopSegment != nullptr);
 
-    const QString lastUserPath;
-    QStringList filters;
-    filters.append("Files *.c3d");
-    filters.append("File C3D (*.c3d)");
-    QString oneLineFilters = filters.join("\n");
-#ifdef Q_OS_WIN
-    const QString file = QFileDialog::getOpenFileName(this, tr("Select Models"), lastUserPath, oneLineFilters);
-#else 
-    const QString file = QFileDialog::getOpenFileName(this, tr("Select Models"), lastUserPath, oneLineFilters, nullptr, QFileDialog::DontUseNativeDialog);
-#endif 
+    QString file = "File";
+    
     return file;
 }
 
