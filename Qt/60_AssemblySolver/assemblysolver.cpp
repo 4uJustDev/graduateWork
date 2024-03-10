@@ -13,9 +13,7 @@
 
 #include <last.h>
 
-//---------------------------------------------------------------------------------------
 // Data initialization constructor.
-//---
 AsMatingGeom::AsMatingGeom(const MbItem& compItem, const MbPath& path, const MbTopItem* elem)
     : m_compItem(&compItem)
     , m_subItemPath(path)
@@ -23,9 +21,7 @@ AsMatingGeom::AsMatingGeom(const MbItem& compItem, const MbPath& path, const MbT
     , m_subElem(elem)
 {}
 
-//---------------------------------------------------------------------------------------
 // Copy initialization constructor.
-//---
 AsMatingGeom::AsMatingGeom(const AsMatingGeom& other)
     : m_compItem(other.m_compItem)
     , m_subItemPath(other.m_subItemPath)
@@ -33,9 +29,7 @@ AsMatingGeom::AsMatingGeom(const AsMatingGeom& other)
     , m_subElem(other.m_subElem)
 {}
 
-//---------------------------------------------------------------------------------------
 // Assignment.
-//---
 AsMatingGeom& AsMatingGeom::operator = (const AsMatingGeom& other) 
 {
     m_compItem = other.m_compItem;
@@ -45,12 +39,10 @@ AsMatingGeom& AsMatingGeom::operator = (const AsMatingGeom& other)
     return *this; 
 }
 
-//---------------------------------------------------------------------------------------
-/** \brief  Geometric data record specified in component LCS.
+/* \brief  Geometric data record specified in component LCS.
     \details  The func returns a unified representation of geometric data to transmit into the C3D Solver.
               The result is specified in local coordinates of the component.
 */
-//---
 GCM_g_record AsMatingGeom::SubGeomRecord() const
 {
     if (m_compItem==nullptr)
@@ -89,9 +81,7 @@ GCM_g_record AsMatingGeom::SubGeomRecord() const
     return subGeomRec;
 }
 
-//---------------------------------------------------------------------------------------
 // Transfomation representing the sub-geom in the world.
-//---
 MbMatrix3D AsMatingGeom::WcsMatrix() const 
 {  
   MbPlacement3D compLCS;
@@ -108,9 +98,7 @@ MbMatrix3D AsMatingGeom::WcsMatrix() const
   return MbMatrix3D::identity; 
 }
 
-//---------------------------------------------------------------------------------------
-// 
-//---
+// Конструктор
 AssemblySolver::AssemblySolver(MbAssembly* assmModel)
     : m_gcSystem(GCM_CreateSystem())
     , m_subGeoms()
@@ -123,9 +111,7 @@ AssemblySolver::AssemblySolver(MbAssembly* assmModel)
         m_assmModel = new MbAssembly;
 }
 
-//---------------------------------------------------------------------------------------
-// 
-//---
+// Деструктор
 AssemblySolver::~AssemblySolver()
 {
     GCM_RemoveSystem(m_gcSystem);
@@ -135,9 +121,7 @@ AssemblySolver::~AssemblySolver()
     }
 }
 
-//---------------------------------------------------------------------------------------
 // Subscribe to the assembly solver events.
-//---
 void AssemblySolver::Subscribe(AsEventHandler* evHandler)
 {
     if (m_slvHandler != nullptr)
@@ -149,26 +133,20 @@ void AssemblySolver::Subscribe(AsEventHandler* evHandler)
 }
 
 
-//---------------------------------------------------------------------------------------
 // Get range of constraints registered in the solver.
-//---
 GeConstraintsRange AssemblySolver::Constraints() const
 {
   return GCM_GetConstraints( m_gcSystem );
 }
 
-//---------------------------------------------------------------------------------------
 // Get string record of a constraint item.
-//---
 std::string AssemblySolver::StrRecord(GCM_constraint cItem) const
 {
     std::string strRec;
     return GCM_SExprRecord( m_gcSystem, cItem, strRec );
 }
 
-//---------------------------------------------------------------------------------------
 // Request already registered geometry component of the assembly.
-//---
 GCM_geom AssemblySolver::CompId(const MbItem* compItem) const
 {
     if (compItem == nullptr)
@@ -190,9 +168,7 @@ GCM_geom AssemblySolver::CompId(const MbItem* compItem) const
     return GCM_NULL;
 }
 
-//---------------------------------------------------------------------------------------
 // Request a ready or newly registered geometry component of the assembly.
-//---
 GCM_geom AssemblySolver::QueryCompId(const MbItem* compItem)
 {
     if (compItem == nullptr)
@@ -219,9 +195,7 @@ GCM_geom AssemblySolver::QueryCompId(const MbItem* compItem)
     return GCM_NULL;
 }
 
-//---------------------------------------------------------------------------------------
 // Request a ready or newly registered geometry argument descriptor.
-//---
 GCM_geom AssemblySolver::QueryGeomId(const AsMatingGeom& mtGeom)
 {    
     // Before all find already registered sub-element. 
@@ -242,9 +216,7 @@ GCM_geom AssemblySolver::QueryGeomId(const AsMatingGeom& mtGeom)
     return GCM_NULL;
 }
 
-//---------------------------------------------------------------------------------------
 // Add an binary constraint of specifed type. The call doesn't re-evaluate the constraint system.
-//---
 GCM_constraint AssemblySolver::AddConstraint(GCM_c_type cType, const AsMatingGeom& mtGeom1, 
                                              const AsMatingGeom& mtGeom2, VariantPar par1, VariantPar par2 )
 {
@@ -272,9 +244,7 @@ GCM_constraint AssemblySolver::AddConstraint(GCM_c_type cType, const AsMatingGeo
     return conId;
 }
 
-//---------------------------------------------------------------------------------------
 // Get type of a geometric constraint.
-//---
 GCM_c_type AssemblySolver::ConstraintType(GCM_constraint conId) const
 {
     if (const ItConstraintItem * cItem = GCM_ConstraintItem(m_gcSystem,conId))
@@ -282,18 +252,14 @@ GCM_c_type AssemblySolver::ConstraintType(GCM_constraint conId) const
     return GCM_UNKNOWN;
 }
 
-//---------------------------------------------------------------------------------------
 // Fix the assembly component.
-//---
 void AssemblySolver::Freeze(const MbItem* compItem)
 {
     if (compItem)
         GCM_FreezeGeom(m_gcSystem, QueryCompId(compItem));
 }
 
-//---------------------------------------------------------------------------------------
 // Reposition of the assembly components to apply re-evaluation result.
-//---
 void AssemblySolver::UpdatePositions(GCM_result evalRes)
 {    
     for ( auto compId: m_compGeoms )
@@ -309,9 +275,7 @@ void AssemblySolver::UpdatePositions(GCM_result evalRes)
     }
 }
 
-//---------------------------------------------------------------------------------------
 // Recalculate the assembly model so that the position of the components satisfies the constraints and dimensions.
-//---
 GCM_result AssemblySolver::Evaluate()
 {
     GCM_result evalRes = GCM_Evaluate(m_gcSystem);
@@ -323,25 +287,19 @@ GCM_result AssemblySolver::Evaluate()
     return evalRes;
 }
 
-//---------------------------------------------------------------------------------------
 // Change alignment option without recalculation.
-//---
 GCM_result AssemblySolver::ChangeAlignment(GCM_constraint conId, GCM_alignment aVal)
 {
     return GCM_ChangeAlignment(m_gcSystem, conId, aVal);
 }
 
-//---------------------------------------------------------------------------------------
 // Change driving dimension value without recalculation.
-//---
 GCM_result AssemblySolver::ChangeDimension( GCM_constraint conId, double dVal )
 {
   return GCM_ChangeDrivingDimension( m_gcSystem, conId, dVal );
 }
 
-//---------------------------------------------------------------------------------------
 // This method checks compatability of the binary constraint and its geometric arguments. 
-//---
 GCM_result AssemblySolver::CompatibleConstraint(GCM_c_type, const AsMatingGeom&, 
                                                 const AsMatingGeom&, GCM_alignment)
 {
@@ -349,9 +307,7 @@ GCM_result AssemblySolver::CompatibleConstraint(GCM_c_type, const AsMatingGeom&,
     return GCM_RESULT_Ok;
 }
 
-//---------------------------------------------------------------------------------------
 // Dynamic rotation to interact with the model while dragging.
-//---
 GCM_result AssemblySolver::DynamicRotation(const AsMatingGeom& axialGeom, double angPos)
 {
     GCM_geom shaft = QueryCompId(axialGeom.CompItem());
@@ -367,9 +323,7 @@ GCM_result AssemblySolver::DynamicRotation(const AsMatingGeom& axialGeom, double
     return GCM_PrepareReposition(m_gcSystem, shaft, subGeomLcs.GetOrigin(), subGeomLcs.GetAxisZ());
 }
 
-//---------------------------------------------------------------------------------------
 // Dynamic rotation to interact with the model while dragging.
-//---
 GCM_result AssemblySolver::DynamicRotation(const MbItem& rtComp, const MbAxis3D& rtAxis
                                          , double angPos)
 {
@@ -384,9 +338,7 @@ GCM_result AssemblySolver::DynamicRotation(const MbItem& rtComp, const MbAxis3D&
     return GCM_PrepareReposition(m_gcSystem, shaft, rtAxis.GetOrigin(), rtAxis.GetAxisZ());
 }
 
-//---------------------------------------------------------------------------------------
 // Finish reposition mode.
-//---
 GCM_result AssemblySolver::DynamicRotationStop(const MbItem& rtComp)
 {
     GCM_geom shaft = QueryCompId(&rtComp);
@@ -398,9 +350,7 @@ GCM_result AssemblySolver::DynamicRotationStop(const MbItem& rtComp)
     return GCM_RESULT_None;
 }
 
-//---------------------------------------------------------------------------------------
 // Remove constraint from the constraint system.
-//---
 void AssemblySolver::RemoveConstraint(GCM_constraint conId)
 {
     GCM_RemoveConstraint(m_gcSystem, conId);
@@ -409,25 +359,18 @@ void AssemblySolver::RemoveConstraint(GCM_constraint conId)
     return;
 }
 
-//---------------------------------------------------------------------------------------
 // Subscribe to the log messages.
-//---
 void AssemblySolver::SubscribeLogs(GCM_log_func logFunc, GCM_extra_param extra) const 
 {
     GCM_SubscribeJournal(m_gcSystem, logFunc, extra);
 }
 
-//----------------------------------------------------------------------------------------
 // Measure alignment option and the dimension value closest to the current state of dimensional geometry.
-//---
 GCM_closest_params AssemblySolver::ClosestParameters(GCM_constraint dimId) const
 {
     return GCM_ClosestParameters(m_gcSystem, dimId);
 }
 
-//----------------------------------------------------------------------------------------
-//
-//---
 enum AsFileTag8: uint8
 {
       FILE_TAG_Unknown = 0
@@ -436,9 +379,7 @@ enum AsFileTag8: uint8
     , FILE_TAG_EoS = 0xFE
 };
 
-//----------------------------------------------------------------------------------------
 // Read the constraint system from the file.
-//---
 bool AssemblySolver::Read(reader& in)
 {
     C3D_ASSERT(m_compGeoms.empty());
@@ -470,9 +411,7 @@ bool AssemblySolver::Read(reader& in)
   return false;
 }
 
-//----------------------------------------------------------------------------------------
 // Write the content of constraint system and its associative data to the file.
-//---
 bool AssemblySolver::Write(writer& out) const
 {
     if (GCM_WriteSystem(m_gcSystem, out))
@@ -491,9 +430,6 @@ bool AssemblySolver::Write(writer& out) const
     return false;
 }
 
-//----------------------------------------------------------------------------------------
-//
-//---
 SPtr<MbBinaryAttribute> ConstraintSystemAttribute( MbAssembly & assm )
 {
     const TCHAR gcAttrTag[] = _T("C3DVision_60_AssemblySolver");
@@ -525,9 +461,7 @@ SPtr<MbBinaryAttribute> ConstraintSystemAttribute( MbAssembly & assm )
     return biAttr;
 }
 
-//----------------------------------------------------------------------------------------
 // Save the constraint system to the assembly attributes binary storage.
-//---
 bool SaveConstraintSystem(const AssemblySolver& solver, MbAssembly& assm)
 {
     SPtr<MbBinaryAttribute> biAttr( ConstraintSystemAttribute(assm) );
@@ -551,9 +485,7 @@ bool SaveConstraintSystem(const AssemblySolver& solver, MbAssembly& assm)
     return false;
 }
 
-//----------------------------------------------------------------------------------------
 // Restore the constraint system from the assembly attributes binary storage.
-//---
 bool RestoreConstraintSystem(AssemblySolver& solver, MbAssembly& assm)
 {    
     SPtr<MbBinaryAttribute> biAttr( ConstraintSystemAttribute(assm) );    
@@ -576,5 +508,3 @@ bool RestoreConstraintSystem(AssemblySolver& solver, MbAssembly& assm)
     }
     return false;
 }
-
-// eof
